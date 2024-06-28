@@ -1,0 +1,6 @@
+.header-absolute{
+    top: 0;
+    position: fixed !important;
+    background-color: #fff;
+    box-shadow: #c0bdbd !important;
+}
