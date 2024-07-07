@@ -1,1 +1,116 @@
-<p>services works!</p>
+<section class="mb-0">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="text-center mb-5">Our Services</h2>
+            @for (item of ourServices; track $index) {
+            <div class="service-item">
+                <div class="service-icon">{{$index + 1}}</div>
+                <div class="service-details">
+                    <h3>{{item.title}}</h3>
+                    <p style="text-align: justify;">{{item.description}}</p>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="best-content">
+                <h3 class="text-center mb-4">Why Choose Us?</h3>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">High-quality products</h5>
+                                    <p class="card-text">Sourced from trusted manufacturers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-truck fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Efficient supply chain</h5>
+                                    <p class="card-text">Ensuring timely delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-bar-chart-line-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Expertise in sales</h5>
+                                    <p class="card-text">Marketing, and distribution of medical products.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-lightbulb-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Commitment to innovation</h5>
+                                    <p class="card-text">Advancing healthcare solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-file-earmark-text-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Comprehensive consultancy</h5>
+                                    <p class="card-text">And training services for healthcare institutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-gear-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Customized solutions</h5>
+                                    <p class="card-text">Tailored to meet specific needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Centrally located</h5>
+                                    <p class="card-text">In Kathmandu, Nepal for easy accessibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-people-fill fs-2 me-3 text-success"></i>
+                                <div>
+                                    <h5 class="card-title">Dedicated team</h5>
+                                    <p class="card-text">Ensuring top-notch service and support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

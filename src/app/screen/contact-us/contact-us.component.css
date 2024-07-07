@@ -1,9 +1,8 @@
 .contact-info {
-    margin-top: 40px;
-}
-
-.contact-info h2 {
-    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
 .contact-item {
@@ -11,9 +10,13 @@
 }
 
 .map-container {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.business-hours {
-    margin-top: 40px;
+.map-container iframe {
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
 }

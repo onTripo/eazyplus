@@ -1,49 +1,151 @@
 <main>
     <section class="about-hero">
         <div class="container">
-            <h1>About EazyPlus</h1>
-            <p>Empowering healthcare organizations with strategic insights and operational expertise.</p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>About EazyPlus</h1>
+                    <p>EazyPlus is dedicated to empowering healthcare organizations with reliable and high-quality
+                        medical and surgical products. Our mission is to enhance patient care and operational efficiency
+                        through innovative solutions.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="mission-values">
         <div class="container">
-            <h2>Our Mission & Values</h2>
-            <div class="content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Our Mission & Values</h2>
+                    <p>At EazyPlus, we are committed to healthcare excellence. We strive to provide exceptional products
+                        and services that meet the diverse needs of healthcare institutions. Our values of integrity,
+                        professionalism, and customer satisfaction guide everything we do.</p>
                 </div>
+                <div class="col-lg-6">
+                    <h2>Why Choose EazyPlus?</h2>
+                    <ul>
+                        <li>High-quality medical and surgical products</li>
+                        <li>Strategic partnerships with healthcare providers</li>
+                        <li>Proven track record of regulatory compliance</li>
+                        <li>Customer-centric approach to service</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
     </section>
 
     <section class="expertise">
         <div class="container">
             <h2>Our Expertise</h2>
-            <ul>
-                <li>Strategic Planning & Development</li>
-                <li>Operational Efficiency & Process Improvement</li>
-                <li>Financial Analysis & Revenue Cycle Management</li>
-                <li>Regulatory Compliance & Accreditation Support</li>
-                <li>Quality Improvement & Patient Safety Initiatives</li>
-            </ul>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>At EazyPlus, we specialize in:</p>
+                    <ul>
+                        <li>Strategic planning and development</li>
+                        <li>Operational efficiency and process improvement</li>
+                        <li>Financial analysis and revenue cycle management</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <p>Our comprehensive services include:</p>
+                    <ul>
+                        <li>Regulatory compliance and accreditation support</li>
+                        <li>Quality improvement and patient safety initiatives</li>
+                        <li>Customized solutions for healthcare challenges</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            </div>
-    </section>
 
+    <section class="pt-0">
+        <div class="container d-md-block d-none">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h3>Meet Our Dedicated Team</h3>
+                </div>
+    
+                <div class="col-md-9">
+                    <swiper-container centered-slides="true" autoplay="true" autoplay-disable-on-interaction="false"
+                        [attr.slides-per-view]="slidesPerView" [attr.loop]="loop">
+                      @for(team of teams; track team.title) {
+                        <swiper-slide class="px-2">
+                            <div class="card">
+                                <div class="card-img-scale">
+                                    <div class="card-img-scale-wrapper rounded-3">
+                                        <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                            class="img-scale" alt="card image">
+                                    </div>
+                                    <div class="card-body text-center px-0 pb-0">
+                                        <h6 class="mb-0"><a href="#" class="stretched-link">Krishna Raj Dhungana</a></h6>
+                                        <small>Founder</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                      }
+                    </swiper-container>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container d-md-none d-sm-block">
+            <h2 class="text-center">Meet Our Dedicated Team</h2>
+            <swiper-container centered-slides="true" autoplay="true" autoplay-disable-on-interaction="false" [attr.loop]="loop">
+                @for(team of teams; track team.title) {
+                    <swiper-slide class="me-2">
+                        <div class="card">
+                            <div class="card-img-scale">
+                                <div class="card-img-scale-wrapper rounded-3">
+                                    <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                        class="img-scale" alt="card image">
+                                </div>
+                                <div class="card-body text-center px-0 pb-0">
+                                    <h6 class="mb-0"><a href="#" class="stretched-link">Krishna Raj Dhungana</a></h6>
+                                    <small>Founder</small>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                  }
+            </swiper-container>
+        </div>
+    </section>
+    
+    
     <section class="testimonials">
         <div class="container">
             <h2>What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"EazyPlus has been instrumental in improving our procurement processes and ensuring
+                                timely delivery of medical supplies. Their commitment to quality and customer
+                                satisfaction is commendable."</p>
+                        </blockquote>
+                        <p class="source">- Healthcare Administrator</p>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"We rely on EazyPlus for their expertise in regulatory compliance and product quality
+                                assurance. They have consistently exceeded our expectations with their proactive
+                                approach and reliable service."</p>
+                        </blockquote>
+                        <p class="source">- Operations Manager</p>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
 
     <section class="cta">
         <div class="container">
             <h2>Partner with EazyPlus</h2>
-            <p>Experience the difference that expert guidance can make.</p>
-            <a href="#" class="btn">Contact Us</a>
+            <p>Experience the difference that expert guidance can make. Partner with EazyPlus today to transform your
+                healthcare operations.</p>
+            <a href="#" class="btn btn-primary">Contact Us</a>
         </div>
     </section>
 </main>

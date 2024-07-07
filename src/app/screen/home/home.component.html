@@ -1,2 +1,60 @@
-
 <app-hero-banner></app-hero-banner>
+
+<section class="hero-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="display-4 mb-4">
+                    <span class="text-info"> Intorducing </span>
+                </h2>
+               <span>
+                <h3 class="text-success">Big Island Milk Formula 0-6 Months </h3>
+               </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="product-details" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+               
+                <swiper-container centered-slides="true" autoplay="true" autoplay-disable-on-interaction="false"
+                [attr.slides-per-view]="slidesPerView" [attr.loop]="loop">
+                @for(image of images; track image) {
+                <swiper-slide class="px-2">
+                    <img [src]="image.imageUrl" alt="milk_formula" width="300">
+                </swiper-slide>
+                }
+                </swiper-container>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">BIM 1 Newborn Formula 0-6 Months</h3>
+                        <p class="card-text">
+                            The BIM 1 Newborn Formula has been carefully engineered for newborn babies who can consume
+                            it from the time of their birth up to six months. This formula is a great source of
+                            relaxation for breastfeeding mothers as it can be used alongside breastfeeding.
+                        </p>
+                        <p class="card-text">
+                            Our product is designed with all the nutrients essential for the ideal growth and
+                            development of your child. It includes prebiotics to help with digestive issues such as
+                            colic, ensuring a healthy gut for your baby.
+                        </p>
+                        <p class="card-text">
+                            We ensure that our formula is made with love, care, and affection to provide your baby with
+                            the highest quality nutrient-dense feed. It is formulated using 100% pure Australian cow
+                            milk from grass-fed cows.
+                        </p>
+                        <p class="card-text">
+                            Big Island Milk values inclusivity, which is why our BIM 1 Newborn Formula is made with 100%
+                            HALAL ingredients and is suitable for vegetarian consumers. We are proud to be certified
+                            with the 100% Australian Made logo by the Ministry of Agriculture, Government of Australia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
