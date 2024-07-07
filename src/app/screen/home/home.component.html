@@ -19,16 +19,21 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-               
-                <swiper-container centered-slides="true" autoplay="true" autoplay-disable-on-interaction="false"
-                [attr.slides-per-view]="slidesPerView" [attr.loop]="loop">
-                @for(image of images; track image) {
-                <swiper-slide class="px-2">
-                    <img [src]="image.imageUrl" alt="milk_formula" width="300">
-                </swiper-slide>
-                }
-                </swiper-container>
-
+                <div class="mt-0 mb-0 d-none d-md-block">
+                    <swiper-container centered-slides="true" autoplay="true" autoplay-disable-on-interaction="false"
+                    [attr.slides-per-view]="slidesPerView" [attr.loop]="loop">
+                    @for(image of images; track image) {
+                        <swiper-slide class="px-2">
+                            <img [src]="image.imageUrl" alt="{{image.title}}" style="height: 500px; width: 100%;" class="swiper-img">
+                        </swiper-slide>
+                    }
+                    </swiper-container>
+                </div>
+                <div class="mt-0 mb-0 d-sm-block d-md-none">
+                    <swiper-slide class="px-2">
+                        <img src="https://eazyplus.com.np/milk_formula_2.png" alt="milk_formula_1" style="height: 500px; width: 100%;" class="swiper-img">
+                    </swiper-slide>
+                </div>
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title">BIM 1 Newborn Formula 0-6 Months</h3>
@@ -58,3 +63,130 @@
         </div>
     </div>
 </section>
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-4">We are Your Trusted Medicine Suppliers</h2>
+                <p class="section-description fw-semibold">With a medicine distribution license and a highly experienced team equipped with certifications, we deliver excellence in healthcare.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-certificate fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Licensed Distribution</h5>
+                        <p class="card-text">We hold a valid medicine distribution license, ensuring compliance and reliability in supply chain management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Experienced Team</h5>
+                        <p class="card-text">Our team boasts extensive experience and expertise in the healthcare industry, ensuring top-notch service delivery.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-award fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Certified Professionals</h5>
+                        <p class="card-text">We have certified professionals dedicated to maintaining high standards in healthcare product distribution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="company-profile" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-4">About Our Company</h2>
+                <p class="section-description fw-semibold">Discover why we're the preferred partner in medical and surgical supplies.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                <div class="position-relative h-100">
+                    <div class="overlay rounded-5"></div>
+                    <img src="/medicines.jpg" class="img-fluid h-100 rounded-5" alt="Medicines Image">
+                </div>
+            </div>
+
+            <div class="col-md-7 mx-auto pt-5">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-md-6">
+                        <div class="card card-body bg-transparent p-0 border-0">
+                            <div class="icon-md bg-primary bg-opacity-10 text-primary rounded mb-3"><i class="bi bi-award fa-2x text-center"></i></div>
+                            <h5 class="card-title mb-2">Mission</h5>
+                            <p class="card-text mb-0">To advance healthcare by delivering high-quality medical products.</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <div class="card card-body bg-transparent p-0 border-0">
+                            <div class="icon-md bg-primary bg-opacity-10 text-primary rounded mb-3"><i class="bi bi-eye fa-2x text-center"></i></div>
+                            <h5 class="card-title mb-2">Vision</h5>
+                            <p class="card-text mb-0">To innovate and lead in healthcare solutions globally.</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <div class="card card-body bg-transparent p-0 border-0">
+                            <div class="icon-md bg-primary bg-opacity-10 text-primary rounded mb-3"><i class="bi bi-people fa-2x text-center"></i></div>
+                            <h5 class="card-title mb-2">Values</h5>
+                            <p class="card-text mb-0">We uphold integrity, excellence, and customer commitment.</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <div class="card card-body bg-transparent p-0 border-0">
+                            <div class="icon-md bg-primary bg-opacity-10 text-primary rounded mb-3"><i class="bi bi-check2-circle fa-2x text-center"></i></div>
+                            <h5 class="card-title mb-2">Commitment</h5>
+                            <p class="card-text mb-0">We are dedicated to exceeding regulatory standards and customer expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="services" class="pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title mb-4">Our Services</h2>
+                <p class="section-description fw-semibold">Explore our comprehensive range of services designed to meet your healthcare needs.</p>
+            </div>
+        </div>
+        <div class="row g-4 g-lg-5 py-2">
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body bg-transparent p-0 border-0">
+                    <h5 class="card-title mb-2 text-primary"> <i class="bi bi-gear fa-xl text-center"></i> Supply Chain Management</h5>
+                    <p class="card-text mb-0">Efficient supply chain solutions tailored to meet healthcare institution demands.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body bg-transparent p-0 border-0">
+                    <h5 class="card-title mb-2 text-primary"> <i class="bi bi-shield-check fa-xl text-center"></i> Quality Assurance</h5>
+                    <p class="card-text mb-0">Strict adherence to quality standards to ensure safe and effective products.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body bg-transparent p-0 border-0">
+                    <h5 class="card-title mb-2 text-primary"><i class="bi bi-heart fa-xl text-center"></i> Customer Care</h5>
+                    <p class="card-text mb-0">Dedicated customer support committed to providing personalized service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
